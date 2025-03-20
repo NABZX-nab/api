@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabzx API Bot</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    * {
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: linear-gradient(to right, #1a1c2c, #282a36);
+      color: white;
+      height: 100vh;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    .header-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .menu-item {
+      border-radius: 20px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #ff8a00, #e52e71);
+    }
+
+    .menu-item a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .glow-box {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar px-6 py-3 flex justify-between items-center">
+    <h1 class="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 bg-clip-text text-transparent">
+      Nabzx API Bot
+    </h1>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center my-6">
+    <h1 class="header-title animate__animated animate__fadeInDown">Nabzx API Bot</h1>
+    <p class="text-gray-300">Penyedia berbagai macam API untuk Bot WhatsApp</p>
+  </header>
+
+  <!-- API Section -->
+  <section class="container mx-auto px-6">
+    <h2 class="text-2xl text-center text-yellow-400 font-bold mb-6">List API Endpoint</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Downloader - TikTok</p>
+        <a href="https://nabzxapibot.vercel.app/api/download/tiktokdl?url=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Order Kuota - Create Payment</p>
+        <a href="https://nabzxapibot.vercel.app/api/orkut/createpayment?apikey=&amount=&codeqr=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Order Kuota - Cek Status</p>
+        <a href="https://nabzxapibot.vercel.app/api/orkut/cekstatus?apikey=&merchant=&keyorkut=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Sticker - Brat Generator</p>
+        <a href="https://nabzxapibot.vercel.app/api/tools/bratgenerator?text=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Downloader - FaceBook</p>
+        <a href="https://nabzxapibot.vercel.app/api/download/fbdl?url=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Downloader - Capcut</p>
+        <a href="https://nabzxapibot.vercel.app/api/download/capcut?url=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Downloader - YouTube MP3</p>
+        <a href="https://nabzxapibot.vercel.app/api/download/ytmp3?url=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Downloader - YouTube MP4</p>
+        <a href="https://nabzxapibot.vercel.app/api/download/ytmp4?url=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Downloader - Instagram</p>
+        <a href="https://nabzxapibot.vercel.app/api/download/igdl?url=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">AI - OpenAI GPT-4</p>
+        <a href="https://nabzxapibot.vercel.app/api/ai/gpt4?text=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+      
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">AI - Gemini</p>
+        <a href="https://nabzxapibot.vercel.app/api/ai/gemini?text=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+
+      <div class="menu-item glow-box animate__animated animate__fadeInUp">
+        <p class="text-lg font-bold">Search - Pinterest</p>
+        <a href="https://nabzxapibot.vercel.app/api/search/pinterest?q=" target="_blank">
+          <i class="fas fa-arrow-circle-right"></i> Go to API
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Nabzx API Bot | All Rights Reserved.
+  </footer>
+
+</body>
+</html>
